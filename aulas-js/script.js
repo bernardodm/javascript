@@ -56,3 +56,15 @@ function solta (){
     input.style.backgroundColor = "yellow";
 }
 
+const lista = [
+    "arroz",
+    "feijão",
+    "macarrão",
+    "leite"
+];
+
+alert (lista[2])
+
+//Para mostrar o total de itens na matriz, basta utilizar o lista.length
+//alert (lista.length);
+//Para acrescentar um item na matriz, basta utilizar o lista.push("item"), assim, entrará mais um na lista
