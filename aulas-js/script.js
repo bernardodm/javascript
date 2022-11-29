@@ -100,7 +100,6 @@ document.getElementById("texto").innerHTML = maiornume(nume);//
 
 
 
-
 lista1.pop(); //apagar o último da lista
 
 
@@ -109,4 +108,14 @@ lista1.pop(); //apagar o último da lista
 //alert (lista.length);
 //Para acrescentar um item na matriz, basta utilizar o lista.push("item"), assim, entrará mais um na lista
 */
+/*
+var hora = new Date().getHours();
 
+if (hora < 12) {
+    alert ("Bom dia");
+} else if (hora < 18) {
+    alert ("Boa tarde");
+} else {
+    alert ("Boa noite")
+}
+*/
