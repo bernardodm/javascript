@@ -1,3 +1,6 @@
+
+/*COMANDOS DO indexedDB.HTML*/
+
 /*
 function soma(valor1,valor2){
     return valor1 + valor2;
@@ -97,12 +100,7 @@ document.getElementById("texto").innerHTML = maiornume(nume);//
 
 
 
-
-
-
 lista1.pop(); //apagar o último da lista
-
-
 
 //Para mostrar o total de itens na matriz, basta utilizar o lista.length
 //alert (lista.length);
@@ -119,3 +117,40 @@ if (hora < 12) {
     alert ("Boa noite")
 }
 */
+
+
+
+
+
+
+/*COMANDOS IF E ELSE */
+/*
+function verificar() {
+    let nome = document.getElementById("inome").value;
+
+    if (nome == "" || nome == null){
+        document.getElementById("texto").innerHTML = "o campo não pode ser vazio";
+    } else {
+        document.getElementById("texto").innerHTML = "Tudo Certinho";
+    }
+}
+
+*/
+function verificaCor() {
+    let cor = document.getElementById("cor").value;
+
+switch (cor) {
+    case "azul":
+        document.body.style.backgroundColor = "blue";
+        break;
+    case "vermelho":
+        document.body.style.backgroundColor = "red";
+        break;
+    case "amarelo":
+        document.body.style.backgroundColor = "yellow";
+        break;
+    default:
+        document.getElementById("texto").innerHTML = "Nenhuma cor disponível para " + cor;
+
+}
+}
