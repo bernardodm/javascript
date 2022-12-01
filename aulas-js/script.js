@@ -136,6 +136,9 @@ function verificar() {
 }
 
 */
+
+
+/*
 function verificaCor() {
     let cor = document.getElementById("cor").value;
 
@@ -153,4 +156,54 @@ switch (cor) {
         document.getElementById("texto").innerHTML = "Nenhuma cor disponível para " + cor;
 
 }
+}
+*/
+
+//function ativarContagem() {
+//    document.getElementById('tempo').innerHTML = "começou a contar!";
+//    //ativa a função apenas uma vez quando der o tempo especificado
+//    tempo = setTimeout (function(){
+//        document.getElementById('tempo').innerHTML = "executou";
+//    }, 1000);
+//}
+
+
+function ativarContagem(){
+    tempo = setInterval (function(){
+       var cronometro = document.getElementById('tempo').innerHTML; 
+       var soma = parseInt(cronometro) + 1;
+       document.getElementById('tempo').innerHTML = soma;
+       alert ("executou")
+    }, 1000);
+}
+
+
+function pararContagem() {
+   clearInterval(tempo);
+//    document.getElementById('tempo').innerHTML = "parou a contagem";
+//
+}
+
+
+function ativarRegress(){
+    time = setInterval (function(){
+       var cronometro = document.getElementById('time').innerHTML; 
+       var diminui = parseInt(cronometro) - 1;
+
+       if (diminui === 0) {
+            document.getElementById('time').innerHTML = "Tempo esgotado";
+            pararRegress()
+       } else {
+            document.getElementById('time').innerHTML = diminui;
+       }
+
+    }, 1000);
+}
+
+
+
+function pararRegress() {
+   clearInterval(time);
+//    document.getElementById('tempo').innerHTML = "parou a contagem";
+//
 }
