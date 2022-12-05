@@ -207,3 +207,13 @@ function pararRegress() {
 //    document.getElementById('tempo').innerHTML = "parou a contagem";
 //
 }
+
+
+let hoje = new Date();
+let venc = new Date(2022, 10, 30);
+
+if (hoje > venc) {
+    alert ("venceu");
+} else {
+    alert ("ok");
+}
