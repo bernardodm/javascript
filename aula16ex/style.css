@@ -26,5 +26,9 @@ footer {
 }
 
 select#flista {
-    width: 150px;
+    width: 200px;
+}
+
+input#deletar {
+    width: 80px;
 }

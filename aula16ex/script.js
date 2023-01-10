@@ -34,6 +34,14 @@ function adicionar() {
     num.focus();
 }
 
+function deletar() {
+    valores.pop();
+    let item = document.createElement('option');
+    item.text = `Último valor digitado deletado.`;
+    lista.appendChild(item);
+    res.innerHTML = '';
+}
+
 function finalizar() {
     if (valores.length == 0) {
         window.alert ('Adicione valores antes de finalizar!');
